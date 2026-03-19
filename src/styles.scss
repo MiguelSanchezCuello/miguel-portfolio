@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'tailwindcss';
+
+/* Define el orden en que se cargaran las capas (layers) de estilo */
+@layer tailwind-base, primeng, tailwind-utilities;
+
+/* Define las capas de estilo */
+@layer tailwind-base {
+    @tailwind base;
+}
+
+@layer tailwind-utilities {
+    @tailwind components;
+    @tailwind utilities;
+}
